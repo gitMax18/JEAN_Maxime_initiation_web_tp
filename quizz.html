@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calédo-Quizz</title>
+    <meta name="description" content="Quizz sur la Nouvelle-Calédonie et sa culture" />
+    <meta name="keywords" content="Nouvelle-Calédonie, voyage, plage, découvrir, quizz" />
+    <meta name="robots" content="follow, index" />
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="main-layout">
+          <li><a href="./index.html">Acceuil</a></li>
+          <li><a href="./quizz.html">Calédo-quizz</a></li>
+          <li><a href="./galerie.html">Galerie</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section id="quizz">
+      <div class="main-layout">
+        <h1>Calédo-Quizz</h1>
+        <hr />
+        <form method="POST" action="#">
+          <div class="input-container">
+            <p>1/ Quelle est la capital de la Nouvelle-Calédonie ?</p>
+            <div>
+              <input type="radio" name="capitale" id="noumea" value="Nouméa" />
+              <label for="noumea">Nouméa</label>
+            </div>
+            <div>
+              <input type="radio" name="capitale" id="kone" value="Koné" />
+              <label for="kone">Koné</label>
+            </div>
+            <div>
+              <input type="radio" name="capitale" id="lifou" value="Lifou" />
+              <label for="lifou">Lifou</label>
+            </div>
+          </div>
+          <div class="input-container">
+            <label for="habitant">2/ Combien d'habitant a la Nouvelle-Calédonie</label>
+            <input type="number" id="habitant" name="habitant" />
+          </div>
+          <div class="input-container">
+            <label for="province">3/ Combien de province a la Nouvelle-Calédonie</label>
+            <input type="number" id="province" name="province" />
+          </div>
+          <div class="input-container">
+            <label for="animal"
+              >4/ Quel est l'animal emblématique de la Nouvelle-Calédonie</label
+            >
+            <select name="animal" id="animal">
+              <option value="">Choisissez une réponse</option>
+              <option value="chien">Le chien</option>
+              <option value="requin">Le Requin marteau</option>
+              <option value="cagou">Le Cagou</option>
+              <option value="gecko">Le gecko</option>
+            </select>
+          </div>
+          <div class="input-container">
+            <p>5/ La Nouvelle-Calédonie est :</p>
+            <div>
+              <input type="radio" name="archipel" id="ile" value="ile" />
+              <label for="ile">Une île</label>
+            </div>
+            <div>
+              <input type="radio" name="archipel" id="archipel" value="archipel" />
+              <label for="archipel">Un archipel</label>
+            </div>
+          </div>
+          <div class="input-container">
+            <label for="nord"
+              >6/ Comment se nomme le village le plus au Nord de la Nouvelle-Calédonie
+              ?</label
+            >
+            <input type="text" id="nord" name="village-nord" />
+          </div>
+          <div class="input-container">
+            <label for="avis">7/ Comment trouvez-vous la Nouvelle-Calédonie ?</label>
+            <textarea id="avis" name="avis" rows="10" cols="50"></textarea>
+          </div>
+          <button type="submit">Envoyer</button>
+        </form>
+      </div>
+    </section>
+    <footer>
+      <div>Site creer par &copy; <i>JEAN Maxime</i></div>
+    </footer>
+  </body>
+</html>
