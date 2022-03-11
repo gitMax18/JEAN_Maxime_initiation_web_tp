@@ -12,14 +12,15 @@
     <meta name="keywords" content="Nouvelle-Calédonie, voyage, plage, découvrir" />
     <meta name="robots" content="follow, index" />
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
-    <header>
+    <header class="home_header">
       <nav>
         <ul class="main-layout">
-          <li><a href="index.html">Acceuil</a></li>
-          <li><a href="quizz.html">Calédo-quizz</a></li>
-          <li><a href="galerie.html">Galerie</a></li>
+          <li><a class="navlink" href="index.html">Acceuil</a></li>
+          <li><a class="navlink" href="quizz.html">Calédo-quizz</a></li>
+          <li><a class="navlink" href="galerie.html">Galerie</a></li>
         </ul>
       </nav>
       <div class="main-layout">
@@ -29,63 +30,66 @@
         </h1>
       </div>
     </header>
-    <section id="description">
-      <div class="main-layout">
-        <div>
-          <img
-            src="./images/nc_home_article.jpg"
-            width="400"
-            height="250"
-            alt="Nouvelle-Calédonie"
-          />
+    <div class="contents">
+      <section id="description">
+        <div class="main-layout">
+          <div>
+            <img
+              class="home-img"
+              src="./images/nc_home_article.jpg"
+              width="400"
+              height="250"
+              alt="Nouvelle-Calédonie"
+            />
+          </div>
+          <p class="first-paragraphe">
+            La Nouvelle-Calédonie est une collectivité sui generis française composée d'un
+            ensemble d'îles et d'archipels d'Océanie, situés en mer de Corail et dans
+            l'océan Pacifique sud. L'île principale est la Grande Terre, longue de 400
+            kilomètres et mesurant 64 km dans sa plus grande largeur.
+          </p>
+          <p>
+            Son chef-lieu ou capitale, Nouméa, en est aussi la principale commune et la
+            seule grande ville. Elle compte 94 285 habitants au recensement de 20193. Le
+            Grand Nouméa (avec les communes voisines de Païta, Dumbéa et Mont-Dore) compte
+            182 341 habitants, soit les deux tiers des 271 407 personnes peuplant
+            l'archipel.
+          </p>
+          <p>
+            La distance avec la France métropolitaine est d'environ 16 740 kilomètres.
+            Cette collectivité (anciennement territoire d'outre-mer, TOM) d'une superficie
+            de 18 575,5 kilomètres carrés, située en Mélanésie et en Océanie lointaine,
+            relève de la souveraineté française depuis 1853.
+          </p>
+          <p>
+            Elle dispose de signes identitaires qui lui sont propres, aux côtés des
+            emblèmes nationaux français (un hymne, une devise et une graphie spécifique
+            des billets de banque). La question de son drapeau et de son nom font en
+            revanche débat, les indépendantistes utilisant généralement l'appellation de «
+            Kanaky » (en référence au peuple kanak) et disposant de leur propre drapeau
+            depuis 1984, deux options rejetées généralement par les non-indépendantistes
+            qui peuvent défendre pour leur part des positions assez diverses (statu quo,
+            association des emblèmes indépendantistes à ceux de la France, ou invention de
+            nouveaux symboles communs à l'ensemble des communautés vivant dans
+            l'archipel).
+          </p>
         </div>
-        <p>
-          La Nouvelle-Calédonie est une collectivité sui generis française composée d'un
-          ensemble d'îles et d'archipels d'Océanie, situés en mer de Corail et dans
-          l'océan Pacifique sud. L'île principale est la Grande Terre, longue de 400
-          kilomètres et mesurant 64 km dans sa plus grande largeur.
-        </p>
-        <p>
-          Son chef-lieu ou capitale, Nouméa, en est aussi la principale commune et la
-          seule grande ville. Elle compte 94 285 habitants au recensement de 20193. Le
-          Grand Nouméa (avec les communes voisines de Païta, Dumbéa et Mont-Dore) compte
-          182 341 habitants, soit les deux tiers des 271 407 personnes peuplant
-          l'archipel.
-        </p>
-        <p>
-          La distance avec la France métropolitaine est d'environ 16 740 kilomètres. Cette
-          collectivité (anciennement territoire d'outre-mer, TOM) d'une superficie de 18
-          575,5 kilomètres carrés, située en Mélanésie et en Océanie lointaine, relève de
-          la souveraineté française depuis 1853.
-        </p>
-        <p>
-          Elle dispose de signes identitaires qui lui sont propres, aux côtés des emblèmes
-          nationaux français (un hymne, une devise et une graphie spécifique des billets
-          de banque). La question de son drapeau et de son nom font en revanche débat, les
-          indépendantistes utilisant généralement l'appellation de « Kanaky » (en
-          référence au peuple kanak) et disposant de leur propre drapeau depuis 1984, deux
-          options rejetées généralement par les non-indépendantistes qui peuvent défendre
-          pour leur part des positions assez diverses (statu quo, association des emblèmes
-          indépendantistes à ceux de la France, ou invention de nouveaux symboles communs
-          à l'ensemble des communautés vivant dans l'archipel).
-        </p>
-      </div>
-    </section>
-    <section id="video">
-      <div class="main-layout">
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/TlEDfkcdan4"
-          title="Vidéo sur la Nouvelle-Calédonie"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
-      </div>
-    </section>
+      </section>
+      <section id="video">
+        <div class="main-layout">
+          <div class="video">
+            <iframe
+              src="https://www.youtube.com/embed/TlEDfkcdan4"
+              title="Vidéo sur la Nouvelle-Calédonie"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </section>
+    </div>
     <footer>
-      <div>Site creer par &copy; <i>JEAN Maxime</i></div>
+      <p>Site creer par &copy; <i>JEAN Maxime</i></p>
     </footer>
   </body>
 </html>
